@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastrar Aluno</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/0e4e34ec2d.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+       <div id="form">
+           <h1 class="title">Novo cadastro</h1>
+        <form name="Formulario" method="post" action="protejo.php"> <!--Inicio do formulário-->
+            <label for="nome">Nome: </label>
+            <div class="input">
+                <i class="far fa-user-circle"></i>
+            <input style="width: 90%; height:90%;  border-radius: 22px; padding-top: 0%; border: #ffff;" type="text" name="nome" id="nome" placeholder="Maria Silva" >
+            </div>
+            <label for="matricula">Matrícula: </label>
+            <div class="input">
+            <i class="fas fa-user-graduate"></i>
+            <input style="width: 90%; height:90%;  border-radius: 22px; padding-top: 0%; border: #ffff;" type="text" name="matricula" id="matricula"  placeholder="01234567" min="0" max='1000'>
+             </div>
+            <label for="nota1">Primeira nota: </label>
+            <div class="input">
+            <i class="fas fa-align-justify"></i>
+            <input style="width: 90%; height:90%;  border-radius: 22px; padding-top: 0%; border: #ffff;" type="number" name="nota1" id="nota1"  step="0.1" max="10" min="0"><br>
+            </div>
+            <label for="nota2">Segunda nota: </label>
+            <div class="input">   
+            <i class="fas fa-align-justify"></i>
+            <input style="width: 90%; height:90%;  border-radius: 22px; padding-top: 0%; border: #ffff;" type="number" name="nota2" id="nota2"  step="0.1" max="10" min="0"><br>
+            </div>
+            <div >
+            <input style="width: 40%; height:40%;  border-radius: 22px;" type="submit" name="enviar" id="btt">
+            </div>
+        </form>
+        <a href="index.html">Voltar</a>
+        
+       </div>
+       <!--o atributo required torna obrigatório o preenchimento dos campos -->
+
+       <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+       <script type="text/javascript" src="validacao.js"></script>
+    </body>
+</html>

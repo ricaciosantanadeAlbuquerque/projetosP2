@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0e4e34ec2d.js" crossorigin="anonymous"></script>
+    <title>Buscar Aluno</title>
+</head>
+<body>
+    <div id="form">
+       
+        <h2>Insira os dados do aluno</h2>
+        <form name="forme" method="post" action="busca.php">
+            <label for="1">Nome do aluno: </label>
+            <div class="input">
+                <i class="far fa-user-circle"></i>
+            <input  style="width: 90%; height:90%;  border-radius: 22px; padding-top: 0%; border: #ffff;" type="text" name="nome1" id="nome" required placeholder="João Silva" ><br>
+            </div>
+            <label for="2">Matrícula: </label>
+            <div class="input">
+                <i class="fas fa-user-graduate"></i>
+            <input   style="width: 90%; height:90%;  border-radius: 22px; padding-top: 0%; border: #ffff;" type="text" name="matricula1" id="matricula" required placeholder="01234567" ><br>
+            </div>
+            <div class=>
+            <input style="width: 40%; height:40%;  border-radius: 22px;"  type="submit" name="enviado" id="btt"> <!--quando alguém clicar  no botão d enviar  será checado o valor de retorno-->
+            </div>
+        </form>
+        <a href="index.html">Voltar</a> <!--Ancora permite ir a página que está ligada  pelo link através do herf=""-->
+    
+    </div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript" src="validacao.js"></script>
+</body>
+</html>
